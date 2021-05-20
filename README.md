@@ -67,4 +67,4 @@ vagrant ssh
 
 vagrant box remove centos-7-5
 
-Полученый бок опубликован.
+Полученый бокс опубликован.

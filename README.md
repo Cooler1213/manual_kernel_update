@@ -66,4 +66,5 @@ vagrant ssh
 
 vagrant box remove centos-7-5
 
-Полученый бокс опубликован.
+Полученый бокс опубликован. \
+https://app.vagrantup.com/cooler/boxes/centos-7-5

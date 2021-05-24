@@ -18,6 +18,7 @@ sudo gzip -d > /usr/local/bin/packer && \
 sudo chmod +x /usr/local/bin/packer
 
 Клонируем репозиторий на рабочую машину.
+
 git clone https://github.com/Cooler1213/manual_kernel_update.git
 
 Запускаем виртуальную машину

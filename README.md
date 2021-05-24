@@ -27,8 +27,8 @@ vagrant ssh \
 [vagrant@kernel-update ~]$ uname -r \
 3.10.0-957.12.2.el7.x86_64
 
-**Обновление ядра**
-Подключаем репозиторий
+**Обновление ядра** \
+Подключаем репозиторий \
 sudo yum install -y http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 
 Ставим последнее ядро:

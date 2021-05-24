@@ -21,7 +21,7 @@ sudo chmod +x /usr/local/bin/packer
 git clone https://github.com/Cooler1213/manual_kernel_update.git
 
 Запускаем виртуальную машину \
-vagrant up \ 
+vagrant up \
 Логинимся \
 vagrant ssh \
 [vagrant@kernel-update ~]$ uname -r \
@@ -31,37 +31,37 @@ vagrant ssh \
 Подключаем репозиторий \
 sudo yum install -y http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 
-Ставим последнее ядро:
+Ставим последнее ядро: \
 sudo yum --enablerepo elrepo-kernel install kernel-ml -y
 
-Обновляем конфигурацию загрузчика:
+Обновляем конфигурацию загрузчика: \
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
-Выбираем загрузку с новым ядром по-умолчанию:
+Выбираем загрузку с новым ядром по-умолчанию: \
 sudo grub2-set-default 0
 
-Перезагружаем виртуальную машину:
+Перезагружаем виртуальную машину: \
 sudo reboot
 
-**Packer**
-Переходим в директорию Pocker
-Создаем образ системы.
-packer build centos.json
-В текущей дириктории появиться файл
-centos-7.7.1908-kernel-5-x86_64-Minimal.box
+**Packer** \
+Переходим в директорию Pocker \
+Создаем образ системы. \
+packer build centos.json \
+В текущей дириктории появиться файл \
+centos-7.7.1908-kernel-5-x86_64-Minimal.box \
 
-**Тестирование созданного образа**
-vagrant box add --name centos-7-5 centos-7.7.1908-kernel-5-x86_64-Minimal.box
-vagrant init centos-7-5
-произведем замену
+**Тестирование созданного образа** \
+vagrant box add --name centos-7-5 centos-7.7.1908-kernel-5-x86_64-Minimal.box \
+vagrant init centos-7-5 \
+произведем замену \
 :box_name => "centos-7-5",
 
-vagrant up
-...
-vagrant ssh 
+vagrant up \
+... \
+vagrant ssh
 
-Итог проверки
-[vagrant@kernel-update ~]$ uname -r
+Итог проверки \
+[vagrant@kernel-update ~]$ uname -r \
 5.3.1-1.el7.elrepo.x86_64
 
 vagrant box remove centos-7-5

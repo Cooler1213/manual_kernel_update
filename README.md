@@ -17,14 +17,14 @@ curl https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_amd64.zip | 
 sudo gzip -d > /usr/local/bin/packer && \
 sudo chmod +x /usr/local/bin/packer
 
-Клонируем репозиторий на рабочую машину. 
+Клонируем репозиторий на рабочую машину.\ 
 git clone https://github.com/Cooler1213/manual_kernel_update.git
 
 Запускаем виртуальную машину
-vagrant up 
-Логинимся
-vagrant ssh
-[vagrant@kernel-update ~]$ uname -r
+vagrant up \ 
+Логинимся \
+vagrant ssh \
+[vagrant@kernel-update ~]$ uname -r \
 3.10.0-957.12.2.el7.x86_64
 
 **Обновление ядра**

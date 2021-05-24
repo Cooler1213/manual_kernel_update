@@ -4,7 +4,7 @@
 
 Все ниже описанные действия производятся на компьютере с установленным debian-10.9.0-amd64-netinst
 
-### h3 **Установка ПО**
+### **Установка ПО**
 
 **Vagrant**
 
@@ -17,7 +17,7 @@ curl https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_amd64.zip | 
 sudo gzip -d > /usr/local/bin/packer && \
 sudo chmod +x /usr/local/bin/packer
 
-Клонируем репозиторий на рабочую машину.
+*italic* Клонируем репозиторий на рабочую машину.
 git clone https://github.com/Cooler1213/manual_kernel_update.git
 
 Запускаем виртуальную машину

@@ -4,14 +4,14 @@
 
 Все ниже описанные действия производятся на компьютере с установленным debian-10.9.0-amd64-netinst
 
-***Установка ПО
+***Установка ПО***
 
-**Vagrant
+**Vagrant**
 
 curl -O https://releases.hashicorp.com/vagrant/2.2.6/vagrant_2.2.16_x86_64.deb && \
 sudo dpkg -i vagrant_2.2.16_x86_64.deb
 
-**Packer
+**Packer**
 
 curl https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_amd64.zip | \
 sudo gzip -d > /usr/local/bin/packer && \
